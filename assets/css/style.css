@@ -1,0 +1,36 @@
+body{
+    font-family: roboto, helvetica, arial, sans-serif;
+}
+.content{
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(195, 240, 240);
+}
+#profile{
+    border-radius: 50%;
+}
+.app{
+    position: absolute;
+    width: 25vw;
+    height: 85vh;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 20px;
+    background-color: rgb(255, 255, 255);
+}
+#AppTitle{
+    font-size: 20px;
+}
+.card-title{
+    font-size: 18px;
+}
+
+.app_body {
+    height: 60vh;
+    overflow-y: scroll;
+}
+.card{
+    box-shadow: 0 4px 8px 0px gray;
+}

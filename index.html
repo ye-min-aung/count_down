@@ -5,8 +5,72 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/fontawsome/css/all.min.css">
 </head>
 <body>
-    <h2>Count down to 2023</h2>
+    <div class="content">
+        <div class="app">
+            <div class="header mb-3">
+                <div class="row m-1">
+                    <div class="col-8 fw-bold" id="AppTitle">
+                        <p>Events</p>
+                    </div>
+                    <div class="col-2">
+                        <p id="acc_name">_therock</p>
+                    </div>
+                    <div class="col-2">
+                        <div id="profile_pp" class="ps-2">
+                        <img id="profile"  src="assets/photos/profile.jpg" alt="" width="30px" height="30px">
+                        </div><!--profile pp-->
+                    </div>
+                </div>
+                <div class="d-flex flex-row p-2">
+                    <div class=""></div>
+                    <div class="btn btn-outline-success" id="AddBtn" data-bs-toggle="modal" data-bs-target="#AddBox"><i class="fas fa-plus"></i>&nbsp;add event</div>
+                </div>
+            </div><!--end head-->
+            <div class="app_body">
+            
+            </div><!--end body-->
+            <div class="app_foot">
+
+            </div><!--end foot-->
+        </div><!--end app-->
+    </div><!--end content-->
+
+    <div class="modal" id="AddBox" data-backdrop="false">
+        <div class="modal-dialog modal-md modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <div class="text-start">
+                        Add Event
+                    </div>
+                </div>
+                <div class="modal-body d-flex flex-column">
+                    <div class="form">
+                        <label for="name">Event name</label>
+                        <input type="text" id="name" class="form-control">
+                        <label for="data">date</label>
+                        <input type="date" id="date" class="form-control">
+                    </div>
+                    <div>
+                        <button class="btn btn-info mt-2 w-50" id="EventSave" data-bs-dismiss="modal">Add</button>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    event
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="assets/jquery.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/fontawsome/js/all.min.js"></script>
+    <script src="app.js"></script>
+    
 </body>
 </html>
+
